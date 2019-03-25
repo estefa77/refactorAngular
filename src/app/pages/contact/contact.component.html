@@ -1,0 +1,62 @@
+
+<section class="section-book" id="about">
+  <div class="row">
+      <div class="book">
+          <div class="book__form">
+              <form  #form="ngForm" class="form">
+                  <div class="u-margin-bottom-medium">
+                      <h2 class="heading-secondary">
+                          Contact
+                      </h2>
+                  </div>                                
+                  <div class="form__group">
+                        <input type="text" name="name" class="form__input" 
+                            placeholder="Full Name" id="name" 
+                            ngModel #name="ngModel"
+                            required #spy>
+                        <label for="name" class="form__label"></label>
+                        <div *ngIf="name.touched && !name.valid" class="alert alert-danger">
+                            The Name is Requeried
+                        </div>
+                    </div>
+                  <div ngModelGroup="contacto" #contacto="ngModelGroup">
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" 
+                        placeholder="E-mail" id="email" 
+                        ngModel #email="ngModel" sin-espacios>
+                        <label for="email" class="form__label"></label>
+                        <div *ngIf="email.errors">Blank spaces are not allowed</div>
+                        
+                    </div>
+                    <div class="form__group">
+                        <textarea class="form__input" name="comment" 
+                        placeholder="Add a comment" id="comment" 
+                        ngModel #comment="ngModel">
+                        </textarea>
+                        <label for="comment" class="form__label"></label>
+                        <div *ngIf="comment.touched && !comment.valid" class="alert alert-danger">
+                                The Name is Requeried
+                        </div>
+
+                    </div> 
+                  </div>
+                  <div class="form__group">
+                       <div>
+                          <i class="fas fa-map-marker-alt"></i>  
+                          <span> Location: Argentina, Córdoba</span>
+                      </div>
+                      <div>
+                          <i class="fab fa-skype"></i> estefania.carevich2
+                      </div>
+                  </div>                                 
+                  <!-- <div class="form__group"> -->
+                      <button type="submit" id="contact-submit" class="btn btn--green  btn--animated">
+                          Send
+                      </button>   
+                  <!-- </div> -->
+              </form>
+          </div>
+
+      </div>
+  </div>
+</section>

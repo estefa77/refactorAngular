@@ -1,0 +1,38 @@
+.header {
+ 	animation: grow 5s ease-in backwards; 
+	-webkit-animation: AnimationName 55s ease infinite;
+	-moz-animation: AnimationName 55s ease infinite;
+	-o-animation: AnimationName 55s ease infinite;
+	animation: AnimationName 55s ease infinite;
+
+    background-position: top;
+	display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+	
+	@supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+		background: repeating-conic-gradient(rgba(250, 199, 11, 0.15) 0deg 25%, white 0deg 50%);
+		background-size: 60px 60px;
+	}
+
+	&__logo {
+		height: 6.5rem;
+	}
+	&__logo-box {
+		display: flex;
+		margin: auto 3rem;
+	}
+	&__text-box {
+		width: 86%;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	@include respond(phone){  
+		flex-direction: column;
+	}
+}
