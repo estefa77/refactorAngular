@@ -13,23 +13,13 @@ const app_routes: Routes = [
     {path: 'about', component: AboutComponent},
     {path: 'work', component: WorkComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'home'},
-
 ];
 
 
 
 @NgModule({
-
-    imports: [
-        RouterModule.forRoot( app_routes)
-    ],
-    exports: [
-        RouterModule
-    ]
-
+    imports: [RouterModule.forRoot( app_routes, {useHash: true })],
+    exports: [RouterModule]
 })
 
-export class AppRoutingModulo {
-    
-
-}
+export class AppRoutingModulo { }
