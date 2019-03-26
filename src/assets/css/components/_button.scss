@@ -11,7 +11,6 @@
 		position: relative;
 		font-size: $default-font-size;
 		font-weight: bold;
-
 		border: none;
 		cursor: pointer;
 	}
@@ -92,7 +91,6 @@
 	position: relative;
 	left: 50%;
 	font-size: 1.8rem;
-
     transition: color .7s;
 
     &:hover {
@@ -129,31 +127,24 @@
 	&:active {
 		box-shadow: 0 1rem 2rem rgba($color-black, .25);
 		transform: translateY(0);
-	}
-	
+	}	
 }
-
-
 
 .up {
 	display: none;
 	position: fixed;
 	padding: 3rem;
-
-	background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+	background-image: linear-gradient(to right, 
+					$color-tertiary-light, $color-tertiary-dark);
 	box-shadow: none;
-
 	color: $color-white;
 	cursor: pointer;
-	
 	bottom: 4rem;
 	right: 6rem;
 	border-radius: 50%;
 	height: 5rem;
 	width: 5rem;
-
-transition: all .3s;
-
+	transition: all .3s;
 	
 	&::before {
 		position: absolute;

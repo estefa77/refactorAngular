@@ -1,4 +1,3 @@
-/* START NEWSLETTER 1*/
 .newsletterMain {
 	display: flex;
 	flex-flow: column nowrap;
@@ -37,7 +36,6 @@
 				font-size: 6rem;
 				color: #15B257;
 				font-family: "Regular";
-
 			}
 		}		
 
@@ -97,7 +95,6 @@
 				}
 			}
 		}
-
 	}
 
 	&__footer {
@@ -135,7 +132,6 @@
 	&__container {
 		display: flex;
 		flex-flow: row wrap;
-
 		width: 100%;
 
 		&__header {
@@ -146,7 +142,6 @@
 		    padding: 10px;
 		    margin-bottom: 2rem;
 		    background-color: #fff;
-
 			display: flex;
 			justify-content: space-between;
 			color: #000;
@@ -262,10 +257,8 @@
 							@include respond(tablet-portrait){
 								font-size: 10rem;
 							}
-
 						}
 					}
-
 
 					&__detailsBottom {
 						width: 55%;
@@ -352,11 +345,10 @@
 					text-transform: uppercase;
 					transition: all .4s;
 
-						&:hover {
-							transform: rotate(5deg) scale(1.3);
-							box-shadow: 0 1rem 2rem rgba(#ADCED3, 1);
-						}
-
+					&:hover {
+						transform: rotate(5deg) scale(1.3);
+						box-shadow: 0 1rem 2rem rgba(#ADCED3, 1);
+					}
 				}
 			}
 
@@ -401,7 +393,6 @@
 .newsletterBeach {
 
 	margin: 3rem auto;
-	
 
 	&__mainContainer {
 	    display: flex;
@@ -424,13 +415,5 @@
 				font-family: "Regular";
 			}
 		}
-
-		&__secondContainer {
-
-			&__containerHotels {
-
-			}
-		}
-
 	}
 }

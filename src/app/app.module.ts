@@ -9,6 +9,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModulo } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 // import { SinEspacios } from './pages/contact/validaciones.directive';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AppRoutingModulo } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModulo,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

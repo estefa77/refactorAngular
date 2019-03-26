@@ -14,21 +14,21 @@ html {
 		font-size: 50%;	} */
  
 	@include respond(tablet-landscape) { //width < 900
-		font-size: 56.25%;}    // 1rem = 9px , 9/16 = 50%
+		font-size: 56.25%;
+	}    // 1rem = 9px , 9/16 = 50%
 
 
 	@include respond(tablet-portrait) { //width < 600
-		font-size: 50%;} // 1rem = 8px, 8/16 = 50%
-
+		font-size: 50%;
+	} // 1rem = 8px, 8/16 = 50%
 
 	/*@include respond(phone) {} //width < 600
 		font-size: 30%;} // 1rem = 8px, 8/16 = 50%
 */
 
 	@include respond(desktop) {
-		font-size: 75%;}  //1rem = 12px, 12/16
-
-
+		font-size: 75%;
+	}  //1rem = 12px, 12/16
 }
 
 body {

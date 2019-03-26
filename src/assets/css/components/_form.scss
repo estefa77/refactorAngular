@@ -34,8 +34,6 @@
 		&:focus:invalid {
 			border-bottom: 3px solid $color-red-form;
 		}
-
-
 	}
 
 
@@ -52,7 +50,6 @@
 		overflow: hidden;
 		opacity: 0;
 		transform: translateY(-4rem);
-
 	}
 	
 	&__radio-group {

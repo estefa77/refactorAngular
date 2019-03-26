@@ -9,7 +9,6 @@
 	transform: skewX(-12deg);
 	background-color:rgba($color-white, .6);
 
-
 	@include respond (tablet-portrait){
 		width: 100%;
 		padding: 4rem;

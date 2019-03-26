@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Directive } from '@angular/core';
 import { AbstractControl, NG_VALIDATORS } from '@angular/forms';
+import { InfoPageService } from './services/info-page.service';
 
 
 @Component({
@@ -9,5 +10,10 @@ import { AbstractControl, NG_VALIDATORS } from '@angular/forms';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'EstefaSite';
+  
+  constructor( public infoPageService: InfoPageService ){
+
+  }
+
+
 }

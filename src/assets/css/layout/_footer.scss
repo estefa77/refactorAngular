@@ -27,7 +27,6 @@
 		padding-top: 2rem;
 		display: inline-block;
 
-
 		@include respond(tablet-portrait) {
 			width: 100%;
 			text-align: center;
@@ -74,8 +73,7 @@
 		width: 80%;
 		float: right;
 		font-size: $font-size-link;
-		// letter-spacing: 3px;
-		// font-family:"Reklame Script W00 Bold";
+		text-align: center;
 
 		i {
 			color: $color-tertiary-light;

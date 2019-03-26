@@ -7,17 +7,10 @@
 	left: 0;
 	background-color: rgba($color-black, .7);
 	z-index: 999;
-	
 	opacity: 0; //hidden the content
 	visibility: hidden;
 	transition: all .3s;
 	
-	// @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-	// 	backdrop-filter: blur(10px); //only in safari
-	// 	-webkit-backdrop-filter: blur(10px);
-	// 	background-color: rgba($color-black, .3);
-	// }
-
 	&__content {
 		@include absCenter;
 
@@ -64,18 +57,15 @@
 		-moz-column-count: 2;
 		-moz-column-gap: 4rem;
 		-moz-column-rule: 1px solid $color-gray-light-2; //border in the middle
-
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
 		-webkit-hyphens: auto;
-		hyphens: auto; //
+		hyphens: auto; 
 
 		@include respond(tablet-portrait) {
 			column-count: 1;
 			-moz-column-count: 1;
-
 		}
-
 	}
 
 //Open popup
