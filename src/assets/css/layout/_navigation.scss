@@ -68,7 +68,8 @@
 
 	&__link {
 		&:link,
-		&:visited {
+		&:visited,
+		.contact-title {
 			font-size: 2.25rem;
 			font-weight: 500;
 			padding: .75rem 0;

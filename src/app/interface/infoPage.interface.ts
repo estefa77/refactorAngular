@@ -5,6 +5,7 @@ export interface infoPagina {
     page?: string;
     github?: string;
     linkedin?: string;
+    skype?: string;
     year?: number;
     team_work?: any[];
 }

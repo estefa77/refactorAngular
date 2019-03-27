@@ -134,36 +134,43 @@ body {
 }
 
 .heading-five {
-	font-size: 4rem;
+	font-size: 2.5rem;
 	line-height: 5.5rem;
 	font-weight: initial;
 	text-transform: uppercase;
-	margin: 3rem 0;
+	margin: 1rem 0 0 0;
     font-family: "Reklame Script W00 Bold";
 
 	@include respond(tablet-portrait) {
-		font-size: 3.4rem;
+		font-size: 2.4rem;
 		margin: 0;
 		padding: 0 2rem;
 	}
 
 	@include respond(phone) {
 		margin: 0;
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 }
 
-.heading-six {
+.heading-six,
+.heading-seven {
     font-family: "Reklame Script W00 Bold";	
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	line-height: 4.5rem;
 	font-weight: initial;
 	text-transform: uppercase;
-	margin: 3rem 0;
+	margin: 1rem 0;
 	@include respond(phone) {
 		margin: 1rem 0 -5rem 0;
 	}	
 }
+.heading-seven {
+	color:#df0e62;
+	font-size: 3rem;
+	margin: 1.5rem 0;
+}
+
 .heading-border {
 	height: 1rem;
 	width: 100%;
@@ -176,6 +183,7 @@ body {
 }
 .paragraph {
 	font-size: $default-font-size;
+	list-style: none;
 
 	&:not(:last-child){
 		margin-bottom: 3rem;
