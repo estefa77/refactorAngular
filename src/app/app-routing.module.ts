@@ -5,7 +5,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { WorkComponent } from './pages/work/work.component';
 
-// ]export { RouterModule } from '@angular/router';
 
 const app_routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -15,11 +14,13 @@ const app_routes: Routes = [
     {path: '**', pathMatch: 'full', redirectTo: 'home'},
 ];
 
-
-
 @NgModule({
     imports: [RouterModule.forRoot( app_routes, {useHash: true })],
     exports: [RouterModule]
 })
 
 export class AppRoutingModulo { }
+export const routingComponents = [HomeComponent, 
+                                ContactComponent, 
+                                AboutComponent, 
+                                WorkComponent]

@@ -18,7 +18,7 @@
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
+  /* speak: none; */
   line-height: 1;
 }
 
@@ -29,7 +29,7 @@
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
+  /* speak: none; */
   line-height: 1;
 }
 
@@ -440,4 +440,8 @@
 }
 .icon-arrows-vertical:before {
   content: "\e087";
+}
+
+.active {
+ color: red;	
 }
