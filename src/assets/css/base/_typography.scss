@@ -161,14 +161,14 @@ body {
 	font-weight: initial;
 	text-transform: uppercase;
 	margin: 1rem 0;
-	@include respond(phone) {
-		margin: 1rem 0 -5rem 0;
-	}	
 }
 .heading-seven {
 	color:#df0e62;
 	font-size: 3rem;
 	margin: 1.5rem 0;
+	@include respond(phone){
+		font-size: 2rem;
+	}
 }
 
 .heading-border {
@@ -185,9 +185,24 @@ body {
 	}
 
 	&__resume {
-		padding: 1rem 5rem 0 5rem;
+		padding: 1rem 3rem;
 		font-size: 2.25rem;
-    	line-height: 2;
+		line-height: 2;
+		@include respond(phone){
+			font-size: 2rem;
+			line-height: 1.8;
+			padding: 0;
+		}
+	}
+	h3 {
+		@include respond(tablet-portrait){
+	
+		}
+	}
+	
+	@include respond(phone){
+		font-size: 2rem;
+		line-height: 1.8;
 	}
 }
 
