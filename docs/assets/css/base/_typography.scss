@@ -134,55 +134,75 @@ body {
 }
 
 .heading-five {
-	font-size: 4rem;
+	font-size: 2.5rem;
 	line-height: 5.5rem;
 	font-weight: initial;
 	text-transform: uppercase;
-	margin: 3rem 0;
+	margin: 1rem 0 0 0;
     font-family: "Reklame Script W00 Bold";
 
 	@include respond(tablet-portrait) {
-		font-size: 3.4rem;
+		font-size: 2.4rem;
 		margin: 0;
 		padding: 0 2rem;
 	}
 
 	@include respond(phone) {
 		margin: 0;
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 }
 
-.heading-six {
+.heading-six,
+.heading-seven {
     font-family: "Reklame Script W00 Bold";	
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	line-height: 4.5rem;
 	font-weight: initial;
 	text-transform: uppercase;
-	margin: 3rem 0;
-	@include respond(phone) {
-		margin: 1rem 0 -5rem 0;
-	}	
+	margin: 1rem 0;
 }
+.heading-seven {
+	color:#df0e62;
+	font-size: 3rem;
+	margin: 1.5rem 0;
+	@include respond(phone){
+		font-size: 2rem;
+	}
+}
+
 .heading-border {
-	height: 1rem;
-	width: 100%;
-	margin: 0.5rem 0;
-	background: repeating-linear-gradient(-45deg, 
-								$color-tertiary-dark, 
-								$color-tertiary-dark 5px, 
-								$color-tertiary-light 5px, 
-								$color-tertiary-light 10px);
+	border: solid 2px #df0e62;
 }
 .paragraph {
-	font-size: $default-font-size;
+	list-style: none;
+	line-height: 2;
+	font-size: 2rem;
 
 	&:not(:last-child){
 		margin-bottom: 3rem;
+		margin-top: 1rem;
 	}
 
 	&__resume {
-		padding: 1rem 5rem 0 5rem;
+		padding: 1rem 3rem;
+		font-size: 2.25rem;
+		line-height: 2;
+		@include respond(phone){
+			font-size: 2rem;
+			line-height: 1.8;
+			padding: 0;
+		}
+	}
+	h3 {
+		@include respond(tablet-portrait){
+	
+		}
+	}
+	
+	@include respond(phone){
+		font-size: 2rem;
+		line-height: 1.8;
 	}
 }
 

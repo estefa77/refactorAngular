@@ -3,15 +3,15 @@
 	margin: 0 auto;
 
 	&:not(:last-child) { // all the rows except the last child
-		margin-bottom: $gutter-vertical;
+		margin-bottom: $gutter-small;
 
 		@include respond(tablet-portrait) {
-			margin-bottom: $gutter-vertical-small;
+			margin-bottom: $gutter-small;
 		}
 	}
 
 	@include respond(tablet-portrait) {
-        max-width: 50rem;
+        // max-width: 50rem;
         padding: 0 3rem;
 	}
 
@@ -29,7 +29,7 @@
 				
 				@include respond(tablet-portrait) {
 					margin-right: 0;
-					margin-bottom: $gutter-vertical-small;
+					margin-bottom: $gutter-small;
 				}	
 			}
 
