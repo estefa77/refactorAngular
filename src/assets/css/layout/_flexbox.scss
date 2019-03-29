@@ -37,3 +37,19 @@
 		}
 	}
 }
+.containerdWorkComponent {
+	margin: 20vw auto;
+
+	&__card {
+		flex: 0 1 30%;
+		margin: 0.5vw;
+		padding: 45px 0;
+
+		&__examples {
+			position: relative;
+			overflow: hidden;
+			max-height: 300px;
+			border: 1px solid #f4f4f4;
+		}
+	}
+}
