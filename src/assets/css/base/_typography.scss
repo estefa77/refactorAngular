@@ -204,5 +204,18 @@ body {
 		font-size: 2rem;
 		line-height: 1.8;
 	}
+
+	li {
+		&::before {
+			position: absolute;
+			content: "";
+			top: 10px;
+			left: -6px;
+			width: 2px;
+			height: 22px;
+			display: block;
+			background: #f06062;
+		}
+	}
 }
 
