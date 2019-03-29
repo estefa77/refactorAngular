@@ -11,6 +11,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Reklame Script W00 Bold";
+  src:url("../font/Reklame Script W00 Bold.eot");
+  src:url("../font/Reklame Script W00 Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Reklame Script W00 Bold.woff") format("woff"),
+    url("../font/Reklame Script W00 Bold.ttf") format("truetype"),
+    url("../font/Reklame Script W00 Bold.svg#Reklame Script W00 Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 [data-icon]:before {
   font-family: "linea-arrows-10" !important;
   content: attr(data-icon);
