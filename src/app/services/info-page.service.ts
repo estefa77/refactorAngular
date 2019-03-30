@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { infoPagina } from '../interface/infoPage.interface';
+import { workPagina } from '../interface/workPage.interface';
 
 
 @Injectable({
@@ -13,11 +14,16 @@ export class InfoPageService {
   cargada = false;
   team: any[] = [];
 
+  data: workPagina = {};
+  load = false;
+  workDetails: any[] = [];
+
 
   constructor( private http: HttpClient) { 
 
     this.cargarInfo();
     this.cargarTeam();
+    this.cargarWork();
  
   }
 
@@ -28,6 +34,17 @@ export class InfoPageService {
       
       this.cargada = true;
       this.info = resp;
+    
+    });
+  }
+
+  private cargarWork()  {
+
+    this.http.get('assets/data/work.json')
+    .subscribe( (resp: workPagina) => {
+      
+      this.load = true;
+      this.data = resp;
     
     });
   }

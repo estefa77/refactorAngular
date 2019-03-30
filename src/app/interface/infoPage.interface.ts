@@ -9,3 +9,4 @@ export interface infoPagina {
     year?: number;
     team_work?: any[];
 }
+

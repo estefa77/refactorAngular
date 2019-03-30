@@ -1,27 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { InfoPageService } from 'src/app/services/info-page.service';
+
 
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss']
 })
+
 export class WorkComponent implements OnInit {
-  tecnologyes = [
-    {"id": 1, "name": "Flexbox"},
-    {"id": 2, "name": "Grid Layout"},
-    {"id": 3, "name": "Newsletter-Flexbox"},
-    {"id": 4, "name": "Animation-CSS"},
-    {"id": 5, "name": "Bootstrap"},
-    {"id": 6, "name": "Angular"}
-  ]
-  constructor( private router: Router) { }
+
+  constructor( private router: Router, public infoPageService: InfoPageService) { }
 
   ngOnInit() {
-  }
-
-  onSelect(tecnologyes){
-    this.router.navigate(['/work', tecnologyes.id]);
   }
 
 }

@@ -2,12 +2,12 @@
 <section class="section-book animated fadeIn" id="about">
   <div class="u-text-center u-margin-bottom-big">
       <h2 class="heading-secondary">
-           Advanced CSS
+           <!-- {{workDetails.work.advCSSTitle}} -->
+           {{infoPageService.data.advCSSTitle}}
       </h2>
-       <h3 class="heading-tertiary">Cards Animated</h3>
-
+       <h3 class="heading-tertiary">{{infoPageService.data.advCSSsubtitle}}</h3>
       <p class="paragraph paragraph__resume">
-          This card was created with the following CSS property: perspective, linear-gradient, clip-path with different sizes, backface-visibility.
+        {{infoPageService.data.advCSSDescription}}
       </p>
   </div>
 
@@ -130,11 +130,11 @@
 <section class="section-about" >
     <div class="u-text-center u-margin-bottom-small">
         <h2 class="heading-secondary u-margin-bottom-medium">
-            Angular & Firebase
+          {{infoPageService.data.angularTitle}}
         </h2>
-        <h3 class="heading-tertiary">Playing with Angular</h3>
+        <h3 class="heading-tertiary">{{infoPageService.data.angularSubtitle}}</h3>
         <p class="paragraph paragraph__resume">
-            Small Projects with Angular, Flexbox & Firebase, using different functionality like: Search Component, Card with list, Security Login, etc. 
+          {{infoPageService.data.angularDescription}}
         </p>
     </div>
     <div class="containerdWorkComponent">
@@ -143,7 +143,7 @@
                 <img src="assets/img/nat-55.jpg" class="imgCard" alt="Porfolio">
             </div>
             <h5>Porfolio</h5>
-            <p><span>Development</span>Portfolio created with Angular, contain a Search component, Routing with child items & card details. Use Firebase, Flexbox, and Animate css.</p>
+            <p><span>Development</span>Portfolio created with Angular, contain a Search component, Routing with child items & card details. Use Firebase, Flexbox & Animate CSS.</p>
         </div> 
     </div>
 </section>
@@ -152,13 +152,11 @@
 <section class="section-about">
         <div class="u-text-center u-margin-bottom-small">
                 <h2 class="heading-secondary u-margin-bottom-medium">
-                   Flexbox
+                  {{infoPageService.data.flexboxTitle}}
                 </h2>
-                <h3 class="heading-tertiary">Landing Pages created with Flexbox</h3>
+                <h3 class="heading-tertiary">{{infoPageService.data.flexboxSubtitle}}</h3>
                 <p class="paragraph paragraph__resume">
-                    This project was created with Flexbox and HTML5, CSS3 and @animations. 
-                    SVG images was used with the icons that generating sprites, changing SVG colors in CSS and best practices. 
-                    BEM methodology & Mask property was used in this Landing page.
+                  {{infoPageService.data.angularDescription}}
                 </p>
             </div>
 
@@ -168,7 +166,7 @@
                     <img src="assets/img/nat-2.jpg" class="imgCard" alt="Hotel ">
                 </div>
                 <h5>Hotel  Elephant</h5>
-                <p><span>Development</span>Blockuote @animated, a Tooltip created with CSS3. Social Media Icons with CSS3, Gallery & Object Media.</p>
+                <p><span>Development</span>Blockquote @animated, a Tooltip created with CSS3. Social Media Icons with CSS3, Gallery & Object Media.</p>
             </div> 
             <div class="cardFlexbox">
                 <div class="cardFlexbox__examples">
@@ -184,11 +182,11 @@
 <section class="section-about" >
   <div class="u-text-center u-margin-bottom-small">
       <h2 class="heading-secondary u-margin-bottom-medium">
-         Newsletter
+        {{infoPageService.data.newsletterTitle}}
       </h2>
-      <h3 class="heading-tertiary">Font Awesome & Flexbox</h3>
+      <h3 class="heading-tertiary">{{infoPageService.data.newsletterSubtitle}}</h3>
       <p class="paragraph paragraph__resume">
-          Small landing pages created with flexbox, SASS, using BEM and Font Awesome. The Landing pages are totally responsive and animated.
+        {{infoPageService.data.newsletterDescription}}
       </p>
   </div>
   <div class="containerdWorkComponent">
@@ -234,9 +232,9 @@
 <section class="section-about" >
     <div class="u-text-center u-margin-bottom-small">
             <h2 class="heading-secondary u-margin-bottom-medium">
-                Bootstrap
+              {{infoPageService.data.bootstrapTitle}}
             </h2>
-        <h3 class="heading-tertiary">Landing Pages created with Bootstrap</h3>
+        <h3 class="heading-tertiary">{{infoPageService.data.bootstrapSubtitle}}</h3>
     </div>
     <div class="containerdWorkComponent">
         <div class="cardFlexbox">
@@ -244,7 +242,7 @@
                 <img src="assets/img/nat-13.jpg" class="imgCard" alt="Queen">
             </div>
             <h5>Queen</h5>
-            <p><span>Development</span>Blockuote @animated, a Tooltip created with CSS3. Social Media Icons with CSS3, Gallery & Object Media.</p>
+            <p><span>Development</span>Blockquote @animated, a Tooltip created with CSS3. Social Media Icons with CSS3, Gallery & Object Media.</p>
         </div> 
         <div class="cardFlexbox">
             <div class="cardFlexbox__examples">
