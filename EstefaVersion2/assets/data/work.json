@@ -1,0 +1,21 @@
+{
+"angularTitle": "ANGULAR & FIREBASE",
+"angularSubtitle": "PLAYING WITH ANGULAR",
+"angularDescription": "Small Projects with Angular, Flexbox & Firebase, using different functionality like: Search Component, Card with items, Security Login, etc.",
+
+"advCSSTitle": "ADVANCED CSS",
+"advCSSsubtitle": "CARDS ANIMATED",
+"advCSSDescription": "This card was created with the following CSS property: perspective, linear-gradient, clip-path with different sizes, backface-visibility.",
+
+"flexboxTitle": "FLEXBOX",
+"flexboxSubtitle": "LANDING PAGES CREATED WITH FLEXBOX",
+"flexboxDescription": "Projects created with Flexbox, HTML5, CSS3 & @animations. BEM methodology & Mask property was used in this Landing page.",
+
+"newsletterTitle": "NEWSLETTER",
+"newsletterSubtitle": "FONT AWESOME & FLEXBOX",
+"newsletterDescription": "Small landing pages created with flexbox, SASS, using BEM and Font Awesome. The Landing pages are totally responsive and animated.",
+
+"bootstrapTitle": "BOOTSTRAP",
+"bootstrapSubtitle": "LANDING PAGES CREATED WITH BOOTSTRAP",
+"bootstrapDescription": ""
+}

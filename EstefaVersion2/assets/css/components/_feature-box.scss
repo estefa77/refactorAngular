@@ -40,4 +40,9 @@
 	&:hover {
 		transform: translateY(-1.5rem) scale(1.03);
 	}
+
+	&__text {
+		line-height: 1.6;
+		font-size: 1.2em;
+	}
 }

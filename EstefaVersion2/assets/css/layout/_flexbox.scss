@@ -1,0 +1,110 @@
+.flexbox-container {
+	display: flex;
+	max-width: 114rem;
+	margin: 0 auto;
+	margin-bottom: 3rem;
+	padding-bottom: 30rem;
+
+	@include respond(tablet-portrait) {
+	flex-direction: column;
+	padding: 0 10rem;
+			margin-bottom: 8rem;
+	}
+
+	@include respond(phone) {
+			margin-bottom: 8rem;
+			padding: 0 4rem;
+	}
+
+	&__box-1,
+	&__box-3 {
+		flex: 0 0 45%;
+		padding: 0 3rem;
+		@include respond(tablet-portrait) {
+			flex: 1;
+		}
+	}
+
+	&__box-2,
+	&__box-4 {
+		flex: 1;
+	}
+
+	&__box-4 {
+		order: -1;
+		@include respond(tablet-portrait) {
+			order: 2;
+		}
+	}
+}
+.containerdWorkComponent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	.cardFlexbox {
+		flex: 0 1 30%;
+		margin: 0.5vw;
+		font-family: 'Josefin Slab', serif;
+		padding: 2rem 0;
+
+		&__examples {
+			position: relative;
+			overflow: hidden;
+			height: 252px;
+			width: 318px;
+			flex-shrink: 0;
+			border: 1px solid #f4f4f4;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+			display: block;
+			transition: all .2s;
+			outline-offset: .5rem;
+
+			.imgCard {
+				object-fit: cover;
+				object-position: top center;
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+			}
+			&:hover {
+				transform: scale(1.05) translateY(-.5rem);
+				outline:#df0e62 solid 1rem;
+				box-shadow: 0 2.5rem 4rem rgba(0,0,0,.5);
+			}
+		}
+		h5 {
+			color: #777;
+			margin: 1rem 0 0px 5px;
+			position: relative;
+			padding: 8px;
+			font-size: 2rem;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			&::before {
+				position: absolute;
+				content: "";
+				top: 10px;
+				left: -6px;
+				width: 2px;
+				height: 22px;
+				display: block;
+				background: #df0e62;
+			}
+		}
+		p {
+			font-size: 1em;
+			font-family: 'Josefin Slab', serif;
+			line-height: 1.5em;
+		}
+		span {
+			display: block;
+			color: #df0e62;
+			font-size: 1.8rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+}
